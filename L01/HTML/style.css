@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Roboto&display=swap');
+
+body
+{
+    font-size: 20px;
+}
+div
+{
+    color: red;
+    font-size: 2rem;
+    font-family: cursive;
+    font-weight: 900;
+    font-style: italic;
+    margin-bottom: 30px;
+
+}
+a
+{
+    text-decoration: none;
+    color: rebeccapurple;
+    /* padding: 10px 15px 5px 20px; */
+    /* padding-right: 10px; */
+    /* margin: 2rem; */
+    margin-right: 2px;
+    border: 2px solid #00FF00;
+    border-radius: 5px;
+    outline: 2px solid red;
+    
+}
