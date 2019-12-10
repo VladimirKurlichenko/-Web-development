@@ -1,0 +1,22 @@
+p
+{
+    font-style: italic;
+}
+span 
+{
+    border-bottom: 2px solid black;
+    font-weight: 700;
+    font-size: 32px;
+}
+div
+{
+    margin-left: 30px;
+}
+h2
+{
+    font-weight: normal;
+}
+blockquote
+{
+    font-style: italic;
+}
