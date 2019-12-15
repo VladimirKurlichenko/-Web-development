@@ -1,0 +1,58 @@
+.wrapper{
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.wrapper > div:nth-child(2n){
+    flex-direction: column-reverse;
+}
+
+.wrapper > div{
+    width: 45%;
+    margin: 10px;
+    min-width: 250px;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table > tbody > tr > th > div{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 5px);
+    top: calc(50% - 5px);
+
+}
+
+.wrapper table > tbody > tr > th >*{
+    position: absolute;
+}
+
+table thead tr th,
+table tbody tr th{
+    border: 1px solid black;
+    position: relative;
+    width: 20px;
+    height: 20px;
+
+}
+
+table thead tr :first-child{
+    background-color: black;
+}

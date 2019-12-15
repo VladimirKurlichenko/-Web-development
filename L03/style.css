@@ -1,16 +1,32 @@
 .wrapper{
     background-color: red;
-    display: table;
-    border-collapse: collapse;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly;
+
+    align-items: center;
+    height: 1000px; */
+    /* width: 600px; */
+    height: 2000px;
+    flex-wrap: wrap;
+   justify-content: space-between;
 }
 
-.wrapper > div{
-    display: table-row;
+.wrapper > div:first-child{
+    position: relative;
+    /* left: 20px; */
+}
+
+.wrapper > div:first-child > div{
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    position: absolute;
+    top: calc(50% - 12.5px);
+    left: calc(50% - 12.5px);
 }
 
 .wrapper > div > span{
-    display: table-cell;
     border: 1px solid black;
 }
 
