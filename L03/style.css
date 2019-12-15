@@ -1,6 +1,8 @@
 .wrapper{
     background-color: red;
     display: table;
+    border-collapse: collapse;
+    width: 100%;
 }
 
 .wrapper > div{
