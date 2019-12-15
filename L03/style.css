@@ -1,0 +1,38 @@
+.wrapper{
+    background-color: red;
+    display: table;
+}
+
+.wrapper > div{
+    display: table-row;
+}
+
+.wrapper > div > span{
+    display: table-cell;
+    border: 1px solid black;
+}
+
+.first{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}
+
+.second{
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+}
+
+.three{
+    background-color: gray;
+    width: 200px;
+    height: 200px;
+}
+
+.four{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+
