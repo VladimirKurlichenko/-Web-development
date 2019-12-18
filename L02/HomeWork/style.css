@@ -1,0 +1,44 @@
+body > :nth-child(3n-2){
+    font-size: 1rem;
+}
+
+body > :nth-child(3n-1){
+    font-size: 2rem;
+}
+
+body > :nth-child(3n){
+    font-size: 3rem;
+}
+
+body > div > :nth-child(7n-6){
+    background-color: red;
+}
+
+body > div > :nth-child(7n-5){
+    background-color: orange;
+}
+
+body > div > :nth-child(7n-4){
+    background-color: yellow;
+}
+
+body > div > :nth-child(7n-3){
+    background-color: green;
+}
+
+body > div > :nth-child(7n-2){
+    background-color:  blue;
+}
+
+body > div > :nth-child(7n-1){
+    background-color: darkblue;
+}
+
+body > div > :nth-child(7n){
+    background-color: violet;
+}
+
+body > div > :nth-child(3n){
+    color: white;
+}
+
