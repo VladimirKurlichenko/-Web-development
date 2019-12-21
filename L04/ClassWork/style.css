@@ -39,12 +39,6 @@ main{
     margin: 0 auto;
 }
 
-/* main > div.banner{
-    width: 100%;
-    background-image: url('main.jpg');
-    height: 750px;
-} */
-
 main > div.banner > img{
     width: 100%;
     height: auto;
@@ -111,29 +105,34 @@ footer > div.column a{
     text-decoration: none;
 }
 
-main > div.questions > h2{
-    background: rgb(38, 35, 80);
-    font-weight: normal;
-    text-align: center;
-    color: white;
-    margin: 0;
-    padding: 0.8rem 0;
+main > div.information > h2{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-main > div.questions > div.first{
+main > div.information{
     border: 2px solid rgb(38, 35, 80);
     padding: 3rem 4rem;
+
 }
 
-main > div.questions > div.first > div.qt{
+main > div.information > div.questions > *{
+    padding: 5px;
+}
+
+main > div.information > div.questions > div.qt{
     background: rgb(38, 35, 80);
     color: white;
     font-size: 1.2rem;
+    margin-top: 5px;
 }
 
-main > div.questions > div.first > div.an{
+main > div.information > div.questions > div.an{
     background: white;
     font-size: 1.2rem;
     border: 2px solid rgb(38, 35, 80);
     display: none;
+
 }
