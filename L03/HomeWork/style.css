@@ -20,6 +20,12 @@ body{
     border-bottom: 2px solid white;
 }
 
+.logo {
+    background: url(logo.png) center center / contain no-repeat;
+    padding: 20px;
+    margin: 2px 2px 2px 2px;
+}
+
 .menu a {
     text-decoration: none;
     color: white;
@@ -27,13 +33,10 @@ body{
     margin-left: 20px;
 }
 
-main > div.banner > img{
-    width: 100%;
-    height: auto;
-}
-
-main > div.banner{
-    display: flex;
+.main_photo {
+    background: url(main.jpg) center center / cover no-repeat;
+    width: 1200px;
+    height: 750px;
 }
 
 .title {
@@ -57,7 +60,7 @@ main > div.banner{
     margin-bottom: 20px;
 }
 
-footer{
+.information{
     max-width: 1200px;
     margin: 0 auto;
     background-color: rgb(38, 35, 80);
@@ -65,31 +68,32 @@ footer{
     box-sizing: border-box;
 }
 
-footer > div.column{
+.information > div.column{
     max-width: calc(100% / 3);
     color: white;
 }   
 
-footer > div.column a{
+.information > div.column a{
     color: inherit;
     text-decoration: none;
 }
 
-footer > div.column > *:not(:last-child){
+.information > div.column > *{
     margin-bottom: 10px;
 }
 
-footer > div.column > div{
+.information > div.column > div{
     font-size: 0.8rem;
 }
 
-footer > div.column > h2{
+.information > div.column > h2{
     margin: 0;
+    margin-bottom: 10px;
     font-weight: normal;
     color: yellow;
 }
 
-footer > div.column address{
+.information > .column > .address{
     color: yellow;
     font-style: normal;
 }

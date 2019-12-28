@@ -1,0 +1,296 @@
+/* Начало Верхняя гирлянда */
+@keyframes change{
+    25% {background-color: red;}
+    50% {background-color: green;}
+    75% {background-color: yellow;}
+    100% {background-color: pink;}
+}
+
+div.garland{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+
+div.garland > div{
+    width: calc(100% / 7 - 80px);
+    height: 110px;
+    border-radius: 50%;
+    background-color: purple;
+    animation: change 3s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    position: relative;
+}
+
+div.garland > div:not(:last-child):before{
+    content: '';
+    position: absolute;
+    top: calc(50% - 50px);
+    right: -83px;
+    width: 100px;
+    height: 89px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: -1;
+
+}
+
+div.garland > div:not(:last-child):after{
+    content: '';
+    position: absolute;
+    top: calc(50% - 52px);
+    right: -83px;
+    width: 100px;
+    height: 89px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+div.garland > div:nth-child(4n+2){
+    margin-top: 55px;
+}
+
+div.garland > div:nth-child(2n+3){
+    margin-top: 75px;
+}
+div.garland > div:nth-child(6n+1){
+    margin-top: 33px;
+}
+div.garland > div:nth-child(4){
+    margin-top: 85px;
+}
+/* Конец Верхняя гирлянда */
+
+div.garlandLeft{
+    position: fixed;
+    top: 0px;
+    transform-origin: top;
+}
+
+div.garlandLeft > div{
+    width: 70px;
+    height: 70px;
+    margin: 20px 0px 0px 2px;
+    background-color: purple;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    border-radius: 50%;
+    position: relative;
+    animation: change 3s infinite;
+}
+
+div.garlandRight {
+    position: fixed;
+    right: 2px;
+    top: 0px;
+    transform-origin: top;
+}
+
+div.garlandRight > div {
+    width: 70px;
+    height: 70px;
+    margin: 20px 0px 0px 2px;
+    background-color: purple;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    border-radius: 50%;
+    position: relative;
+    animation: change 3s infinite;
+}
+
+div.garlandLeft > div:not(:last-child):before{
+    content: '';
+    position: absolute;
+    top: 35px;
+    width: 35px;
+    height: 40px;
+    margin: 25px 22px 0px 1px;
+    left: 30px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: -1;
+
+}
+
+div.garlandRight > div:not(:last-child):after{
+    content: '';
+    position: absolute;
+    top: 35px;
+    width: 35px;
+    height: 40px;
+    margin: 25px 22px 0px 0px;
+    left: 2px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+div.garlandRight > div:not(:last-child):before{
+    content: '';
+    position: absolute;
+    top: 35px;
+    width: 35px;
+    height: 40px;
+    margin: 25px 22px 0px 1px;
+    left: 3px;
+    background-color: black;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+div.garlandLeft > div:not(:last-child):after{
+    content: '';
+    position: absolute;
+    top: 35px;
+    width: 35px;
+    height: 40px;
+    margin: 25px 22px 0px 0px;
+    left: 33px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header{
+    max-width: 1200px;
+    background: purple;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    margin: 0 auto 5px;
+    box-sizing: border-box;
+}
+
+header > img{
+    width: 30px;
+    height: auto;
+} 
+
+header > nav{
+    margin-left: 1.2rem;
+}
+
+header > nav > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+header > nav > a :not(:last-child){
+    margin-right: 1.2rem;
+}
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main > div.banner > img{
+    width: 100%;
+    height: auto;
+}
+
+main > div.banner{
+    display: flex;
+}
+
+main > h1{
+    background: rgb(38, 35, 80);
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0.8rem 0;
+}
+
+main > section.text{
+    border: 2px solid rgb(38, 35, 80);
+    padding: 3rem 4rem;
+    /* display: none; */
+}
+
+main > section.text > article{
+    color: rgb(38, 35, 80);
+    text-align: justify;
+}
+
+footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(38, 35, 80);
+    padding: 3rem 4rem;
+    box-sizing: border-box;
+}
+
+footer > div.column{
+    max-width: calc(100% / 3);
+    color: white;
+}   
+
+footer > div.column > *:not(:last-child){
+    margin-bottom: 10px;
+}
+
+footer > div.column > div{
+    font-size: 0.8rem;
+}
+
+footer > div.column > h2{
+    margin: 0;
+    font-weight: normal;
+    color: yellow;
+}
+
+footer > div.column address{
+    color: yellow;
+    font-style: normal;
+}
+
+footer > div.column a{
+    color: inherit;
+    text-decoration: none;
+}
+
+main > div.information > h2{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+main > div.information{
+    border: 2px solid rgb(38, 35, 80);
+    padding: 3rem 4rem;
+
+}
+
+main > div.information > div.questions > *{
+    padding: 5px;
+}
+
+main > div.information > div.questions > div.qt{
+    background: rgb(38, 35, 80);
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+main > div.information > div.questions > div.an{
+    background: white;
+    font-size: 1.2rem;
+    border: 2px solid rgb(38, 35, 80);
+    display: none;
+
+}
