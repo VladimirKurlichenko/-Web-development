@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: url(photos/top.jpg);
+    max-width: 1200px;
+    max-height: 1080px;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    box-sizing: border-box;
+    background-size: cover; 
+    position: relative;
+}
+
+header > img{
+    width: 40px;
+    height: 40px;
+}
+
+header > nav >a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    align-items: end;
+}
+
+header > nav{
+    margin-left: 200px;
+}
+
+/* Слайдер */
+
+#slider { 
+    text-align: center;
+    /* margin-top: 200px;
+    margin-left: 100px; */
+    margin: 0 auto;
+}
+
+#slides article{ /*все изображения справа друг от доруга*/
+	width: 20%;
+
+}
+
+#slides .content{ /*устанавливает общий размер блока с изображениями*/
+	width: 500%;
+
+}

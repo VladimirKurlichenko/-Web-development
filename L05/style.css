@@ -101,13 +101,13 @@ div.garlandRight > div {
     animation: change 3s infinite;
 }
 
-div.garlandLeft > div:not(:last-child):before{
+div.garlandLeft > div:not(:first-child):before{
     content: '';
     position: absolute;
     top: 35px;
     width: 35px;
     height: 40px;
-    margin: 25px 22px 0px 1px;
+    margin: -65px 22px 0px 1px;
     left: 30px;
     background-color: black;
     border-radius: 50%;
@@ -115,46 +115,62 @@ div.garlandLeft > div:not(:last-child):before{
 
 }
 
-div.garlandRight > div:not(:last-child):after{
+div.garlandRight > div:not(:first-child):after{
     content: '';
     position: absolute;
     top: 35px;
     width: 35px;
     height: 40px;
-    margin: 25px 22px 0px 0px;
+    margin: -64px 22px 0px 0px;
     left: 2px;
     background-color: white;
     border-radius: 50%;
     z-index: -1;
 }
 
-div.garlandRight > div:not(:last-child):before{
+div.garlandRight > div:not(:first-child):before{
     content: '';
     position: absolute;
     top: 35px;
     width: 35px;
     height: 40px;
-    margin: 25px 22px 0px 1px;
+    margin: -65px 22px 0px 1px;
     left: 3px;
     background-color: black;
     border-radius: 50%;
     z-index: -1;
 }
 
-div.garlandLeft > div:not(:last-child):after{
+div.garlandLeft > div:not(:first-child):after{
     content: '';
     position: absolute;
     top: 35px;
     width: 35px;
     height: 40px;
-    margin: 25px 22px 0px 0px;
+    margin: -64px 22px 0px 0px;
     left: 33px;
     background-color: white;
     border-radius: 50%;
     z-index: -1;
 }
 
+div.garlandLeft > div:first-child:after{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    background-color: black;
+    margin: -20px 0px 0px 34px;
+}
 
+div.garlandRight > div:first-child:after{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    background-color: black;
+    margin: -20px 0px 0px 34px;
+}
 
 body{
     margin: 0;

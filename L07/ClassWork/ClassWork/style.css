@@ -1,0 +1,155 @@
+.star{
+    width: 60px;
+    height: auto;
+    
+    position: absolute;
+}
+
+.star > svg{
+    width: 100%;
+    height: 100%;
+}
+
+.field{
+    width: 800px;
+    height: 600px;
+    position: relative;
+    margin: 1rem auto 0;
+    border-radius: 3px;
+    box-shadow: 0 0 25px -10px black;
+}
+
+.fly-button{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    z-index: 999;
+}
+
+.fly-button > button{
+    border-radius: 50%;
+    background-color: blue;
+    padding: 2rem;
+    position: relative;
+    box-shadow: 3px 6px 20px -4px black;
+    border: none;
+}
+
+.fly-button > button:focus{
+    outline: none;
+}
+
+.fly-button > button:hover{
+    cursor: pointer;
+}
+
+.fly-button > button:after{
+    content: '';
+    position: absolute;
+    height: 50%;
+    width: .5rem;
+    top: 25%;
+    left: calc(50% - .25rem);
+    background-color: white;
+    transform: rotate(90deg);
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.fly-button > button:before{
+    content: '';
+    position: absolute;
+    height: 50%;
+    width: .5rem;
+    top: 25%;
+    left: calc(50% - .25rem);
+    background-color: white;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.fly-button > button.rotate:after{
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+.fly-button > button.rotate:before{
+    transform: rotate(135deg);
+    transition: .5s;
+}
+
+
+.popup{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.popup > .wrapper{
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup > .wrapper > .body{
+    padding: 2rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 25px black;
+}
+
+.popup > .wrapper > .body > h2{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.popup > .wrapper > .body > form{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup > .wrapper > .body > form > label > input{
+    border: none;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.popup > .wrapper > .body > form > label > input:focus{
+    outline: none;
+}
+
+.popup > .wrapper > .body > form > label{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 10px 3px 3px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.popup > .wrapper > .body > form > label > span{
+    margin-top: -19px;
+    padding: 0 5px;
+    margin-left: 10px;
+    background-color:white;
+}
+
+.popup > .wrapper > .body > form > button{
+    margin: 0 auto;
+    padding: 10px 15px;
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    font-size: 1rem;
+}
